@@ -1,0 +1,24 @@
+.footer {
+  background-color: var(--color-blue);
+  padding-top: 96px;
+  border-top-left-radius: var(--border-radius-big);
+  color: var(--color-light);
+
+  @include mobile {
+    border-top-left-radius: 100px;
+  }
+
+  &__copyright {
+    display: flex;
+    padding-bottom: 64px;
+
+    @include desktop {
+      padding-inline: 50px;
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+}
+

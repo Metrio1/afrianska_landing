@@ -1,0 +1,19 @@
+.button {
+  @include flex-center(true);
+  @include reset-button;
+
+  height: var(--button-height);
+  padding-inline: 48px;
+  font-size: 16px;
+  color: var(--color-light);
+  background-color: var(--color-blue);
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  box-shadow: var(--box-shadow-button);
+
+  @include hover {
+    background-color: var(--color-light);
+    color: var(--color-blue);
+  }
+}
+

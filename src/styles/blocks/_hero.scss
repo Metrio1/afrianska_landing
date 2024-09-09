@@ -1,0 +1,90 @@
+.hero {
+
+  &__content {
+    z-index: 1;
+    position: absolute;
+    margin-top: 130px;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+
+    @include desktop {
+      width: 100%;
+      padding-right: 15%;
+    }
+  }
+
+  &__button {
+    align-self: start;
+    box-shadow: var(--box-shadow-button);
+  }
+
+  &__icons {
+    position: absolute;
+    left: 44%;
+    top: 13%;
+    width: 700px;
+    height: 600px;
+
+    @include desktop {
+      top: 42%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    width: 60%;
+    margin-bottom: 48px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.icon {
+
+  &__shadow-illustration {
+    position: absolute;
+    right: 0%;
+    rotate: 1deg;
+    top: 8%;
+  }
+
+  &__illustration-background {
+    position: absolute;
+    right: 3%;
+    top: 11%;
+  }
+
+  &__man {
+    position: absolute;
+    left: 15%;
+    top: 54%;
+  }
+
+  &__platform {
+    position: absolute;
+    left: 29%;
+    top: 44%;
+  }
+
+  &__women {
+    z-index: 1;
+    position: absolute;
+    left: 75%;
+    top: 35%;
+  }
+
+  &__smart-home {
+    position: absolute;
+    left: 54%;
+    top: 0;
+  }
+}

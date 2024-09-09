@@ -1,0 +1,134 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  width: 540px;
+  min-height: 800px;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-card);
+  padding: 56px;
+  z-index: 200;
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 50%);
+    z-index: 100;
+  }
+
+  &__success-popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 10%);
+    font-size: 16px;
+    z-index: 300;
+  }
+
+  &__close-button {
+    @include reset-button;
+
+    top: 48px;
+    right: 48px;
+    position: absolute;
+    border-radius: var(--border-radius);
+    width: 48px;
+    height: 48px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      right: 8px;
+      width: 32px;
+      height: 2px;
+      background-color: var(--color-dark-blue);
+      border-radius: var(--border-radius);
+
+      @include mobile {
+        top: 18px;
+      }
+    }
+
+    &::before {
+      rotate: 45deg;
+    }
+
+    &::after {
+      rotate: -45deg;
+    }
+
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: var(--color-dark-blue);
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
+    &-input,
+    &-textarea {
+      padding-inline: 36px;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--color-sea-blue);
+      opacity: 0.4;
+
+      &--invalid {
+        border-color: red;
+      }
+
+    }
+
+    &-input {
+      height: var(--input-height);
+    }
+
+    &-textarea {
+      padding-top: 21px;
+      min-height: 144px;
+    }
+
+    &-submit {
+      margin-top: 40px;
+      height: 72px;
+    }
+
+    &-error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}

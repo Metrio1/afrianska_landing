@@ -1,0 +1,29 @@
+:root {
+  --color-dark-blue: #1F3F68;
+  --color-light-blue: #98C3E8;
+  --color-blue: #5A98D0;
+  --color-light-gray: #F2F2F2;
+  --color-light: #FFF;
+  --color-aegean-blue: #316099;
+  --color-sea-blue: #356EAD;
+
+  --border-radius: 10px;
+  --border-radius-big: 200px;
+
+  --box-shadow-card: 5px 20px 50px 0 rgb(16, 112, 177, 20%);
+  --box-shadow-button: 5px 10px 20px 0 rgb(53, 110, 173, 20%);
+  --gradient: linear-gradient(0deg, #98c3e8 28.39%, rgba(152, 195, 232, 0%) 100%);
+
+  --font-family-base: 'Gilroy', sans-serif;
+
+  --container-width: 940px;
+
+  --card-width: 380px;
+  --card-padding: 48px;
+
+  --input-height: 72px;
+  --button-height: 56px;
+  --button-height-big: 72px;
+
+  --transition-duration: 0.2s;
+}
